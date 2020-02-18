@@ -2,9 +2,9 @@
   .chat-side--header
     .chat-side--header__box
       .chat-side--header__box--right
-        masa
+        = current_user.name
       .chat-side--header__box--left
-        = link_to href = "#", class: "chat-side--header__box--left__btn" do
+        = link_to edit_user_path(current_user), class: "chat-side--header__box--left__btn" do
           = icon('fas', 'cog', class:"chat-side--header__box--left__btn__icon")
         = link_to href = "#", class: "chat-side--header__box--left__btn" do
           = icon('far', 'edit', class:"chat-side--header__box--left__btn__icon")
