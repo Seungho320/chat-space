@@ -12,10 +12,46 @@
   width: 300px;
   &--header {
     height: 100px;
+    display: flex;
+    align-items: center;
+    &__box {
+      height: 20px;
+      width: 260px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      &--right {
+        color: #ffffff;
+      }
+      &--left {
+        width: 60px;
+        padding-right: 0;
+        &__btn {
+          text-decoration: none;
+          color: #ffffff;
+          &__icon {
+            float: right;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
   }
-  &__group-list {
+  &__group {
     background-color: #2f3e51;
     height: calc(100% - 100px);
+    &__list {
+      font-weight: bold;
+      color: #ffffff;
+      padding: 20px 20px 40px;
+      &--name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &--text {
+        font-size: 11px;
+      }
+    }
   }
 }
 
@@ -25,13 +61,92 @@
   &--header {
     height: 100px;
     border-bottom: solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &--name {
+      color: #333333;
+      font-size: 20px;
+      margin-top: 35px;
+      &--member {
+        color: #999999;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+    }
+    &__box {
+      width: 72px;
+      &__btn {
+        display: block;
+        padding: 0 20px;
+        color: #38aef0;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 28px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #38aef0;
+      }
+    }
   }
   &__message {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    padding-left: 40px;
+    &__box {
+      padding: 35px 0 46px;
+      &__in {
+        margin-bottom: 12px;
+        display: flex;
+        &--name {
+          color: #333333;
+          font-size: 16px;
+        }
+        &--date {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      &--text {
+        color: #434a54;
+        font-size: 14px;
+      }
+    }
   }
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
+    &__new {
+      display: flex;
+      font-weight: bold;
+      &-input {
+        width: 100%;
+        position: relative;
+        &__box {
+          padding: 0 40px 0 10px;
+          width: 100%;
+          height: 50px;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px ;
+          cursor: pointer;
+          font-size: 1.3rem;
+          &-file {
+            display: none;
+          }
+        }
+      }
+      &-submit {
+        width: 100px;
+        height: 50px;
+        background-color: #38aef0;
+        margin-left: 15px;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
 }
