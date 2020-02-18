@@ -1,0 +1,21 @@
+.chat-side
+  .chat-side--header
+    .chat-side--header__box
+      .chat-side--header__box--right
+        masa
+      .chat-side--header__box--left
+        = link_to href = "#", class: "chat-side--header__box--left__btn" do
+          = icon('fas', 'cog', class:"chat-side--header__box--left__btn__icon")
+        = link_to href = "#", class: "chat-side--header__box--left__btn" do
+          = icon('far', 'edit', class:"chat-side--header__box--left__btn__icon")
+  .chat-side__group
+    .chat-side__group__list
+      %p.chat-side__group__list--name
+        group name
+      %p.chat-side__group__list--text
+        group text
+    .chat-side__group__list
+      %p.chat-side__group__list--name
+        group name
+      %p.chat-side__group__list--text
+        group text
