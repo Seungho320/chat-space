@@ -95,8 +95,8 @@
   &__message {
     height: calc(100vh - 190px);
     background-color: #fafafa;
-    padding-left: 40px;
-    padding-top: 35px;
+    padding: 46px 40px;
+    overflow: scroll;
     &__box {
       padding-bottom: 46px;
       &__in {
