@@ -95,9 +95,10 @@
   &__message {
     height: calc(100vh - 190px);
     background-color: #fafafa;
-    padding-left: 40px;
+    padding: 46px 40px;
+    overflow: scroll;
     &__box {
-      padding: 35px 0 46px;
+      padding-bottom: 46px;
       &__in {
         margin-bottom: 12px;
         display: flex;
