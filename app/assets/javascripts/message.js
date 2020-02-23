@@ -56,6 +56,7 @@ $('#new_message').on('submit', function(e){
     $('.chat-main__message').append(html);      
     $('form')[0].reset();
     $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
+    $('.form__new-submit').prop('disabled', false);
   })
 })
 });
